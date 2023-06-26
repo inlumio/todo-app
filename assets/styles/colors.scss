@@ -1,0 +1,50 @@
+:root {
+	--primary-cyan: hsl(192, 100%, 67%);
+	--primary-white: hsl(0, 0%, 100%);
+
+	--primary-blue: hsl(220, 98%, 61%);
+	--primary-purple: hsl(280, 87%, 65%);
+	--gradient: linear-gradient(
+		135deg,
+		var(--primary-blue),
+		var(--primary-purple)
+	);
+
+	// dark
+	--dark-1: hsl(236, 33%, 92%);
+	--dark-2: hsl(234, 39%, 85%);
+	--dark-3: hsl(234, 11%, 52%);
+	--dark-4: hsl(233, 14%, 35%);
+	--dark-5: hsl(237, 14%, 26%);
+	--dark-6: hsl(235, 24%, 19%);
+	--dark-7: hsl(235, 21%, 11%);
+
+	//light
+	--light-1: hsl(0, 0%, 98%);
+	--light-2: hsl(236, 33%, 92%);
+	--light-3: hsl(233, 11%, 84%);
+	--light-4: hsl(236, 9%, 61%);
+	--light-5: hsl(235, 19%, 35%);
+}
+
+:root[data-theme='dark'] {
+	--page-bg: var(--dark-7);
+	--main-bg: var(--dark-6);
+	--text-additions: var(--dark-3);
+	--text-additions-accent: var(--dark-2);
+	--text-footer: var(--dark-4);
+	--text-todo-completed: var(--dark-4);
+	--text-todo: var(--dark-1);
+	--addons: var(--dark-5);
+}
+
+:root[data-theme='light'] {
+	--page-bg: var(--light-1);
+	--main-bg: var(--primary-white);
+	--text-additions: var(--light-4);
+	--text-additions-accent: var(--light-5);
+	--text-footer: var(--light-4);
+	--text-todo-completed: var(--dark-2);
+	--text-todo: var(--dark-5);
+	--addons: var(--dark-2);
+}
